@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.debug {
+    border: 1px solid red;
+}
+.container {
+    margin: 0 auto;
+    width: 1140px;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.list-unstyled {
+    list-style: none;
+}
+.column-gap-3 {
+    column-gap: 30px;
+}
