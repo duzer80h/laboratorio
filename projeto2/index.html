@@ -4,134 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bem-vindo ao meu site!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 30px;
+        font-family: "Roboto", sans-serif;
+      }
       img {
         border-radius: 50%;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
       }
+      a {
+        text-decoration: none;
+        color: rgb(51, 204, 51);
+      }
+      .dados-pessoais {
+        align-items: center;
+        display: flex;
+        column-gap: 30px;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      h2 {
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgb(51, 204, 51);
+        padding-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        margin-bottom: 10px;
+      }
+      h4 {
+        margin-bottom: 10px;
+      }
+      h5 {
+        margin-bottom: 10px;
+        font-style: italic;
+        font-weight: 400;
+      }
     </style>
   </head>
   <body>
-    <img src="./eu.jpg" alt="Foto do Eduardo José Almeida" width="150" >
-    <h1>
-      Eduardo José Almeida
-    </h1>
-    <p>
-      Telefone: <a href="tel:+5517997829921">(17) 997829921</a>
-      <br />
-      Email: <a href="mailto:duzer80h@gmail.com">Duzer80H@gmail.com</a>
-    </p>
-    <h2>
-        Sobre
-    </h2>
+    <div class="dados-pessoais">
+      <div>
+        <img src="./eu.jpg" alt="Foto do Eduardo José Almeida" width="150" />
+      </div>
+      <div>
+        <h1>Eduardo José Almeida</h1>
+        <p>
+          Telefone: <a href="tel:+5517997829921">(17) 997829921</a>
+          <br />
+          Email: <a href="mailto:duzer80h@gmail.com">Duzer80H@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <h2>Sobre</h2>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
       laudantium ad vel commodi dolorem asperiores, quod culpa, illo maxime
       voluptates cupiditate possimus eius excepturi saepe laborum sapiente
       dignissimos rem impedit.
     </p>
-    <h2>
-        Experiência profissional
-    </h2>
-    <h3>
-      Eletro Ar
-    </h3>
-    <h4>
-      Auxiliar
-    </h4>
-    <i>
-      15/10/2024 - 04/06/2026
-    </i>
+    <h2>Experiência profissional</h2>
+    <h3>Eletro Ar</h3>
+    <h4>Auxiliar</h4>
+    <h5> 15/10/2024 - 04/06/2026 </h5>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error
-      ipsam dolorem, ea sed soluta aliquam sapiente ipsa non magni facilis debitis
-      perferendis voluptates illo aut minus explicabo autem labore.
+      ipsam dolorem, ea sed soluta aliquam sapiente ipsa non magni facilis
+      debitis perferendis voluptates illo aut minus explicabo autem labore.
     </p>
-    <h2>
-        Educação e formação
-    </h2>
-    <h3>
-      UNIP
-    </h3>
-    <h4>
-      Análise de sistemas
-    </h4>
-    <i>
-      01/02/2025
-    </i>
+    <h2>Educação e formação</h2>
+    <h3>UNIP</h3>
+    <h4>Análise de sistemas</h4>
+    <h5> 01/02/2025 </h5>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi,
-      corporis sapiente ducimus sit, aliquid commodi veniam eius non saepe libero
-      amet voluptas, recusandae mollitia tempora cum ipsam illo magnam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      nisi, corporis sapiente ducimus sit, aliquid commodi veniam eius non saepe
+      libero amet voluptas, recusandae mollitia tempora cum ipsam illo magnam.
     </p>
-    <h2>
-      Competências digitais
-    </h2>
+    <h2>Competências digitais</h2>
     <ul>
-      <li>
-        Windows
-      </li>
-      <li>
-        Excel
-      </li>
-      <li>
-        HTML
-      </li>
-      <li>
-        CSS
-      </li>
-      <li>
-        JavaScript
-      </li>
-      <li>
-        SASS
-      </li>
-      <li>
-        Node.js
-      </li>
-      <li>
-        React
-      </li>
-      <li>
-        MongoDB
-      </li>
-      <li>
-        MySQL
-      </li>
-      <li>
-        Firebase
-      </li>
-      <li>
-        GIT
-      </li>
-      <li>
-        Next.js
-      </li>
-      <li>
-        NestJS
-      </li>
-      <li>
-        GraphQL
-      </li>
-      <li>
-        JWT
-      </li>
-      <li>
-        Socket.IO
-      </li>
-      <li>
-        Webpack
-      </li>
-      <li>
-        ECS6
-      </li>
-      <li>
-        AWS
-      </li>
+      <li>Windows</li>
+      <li>Excel</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>SASS</li>
+      <li>Node.js</li>
+      <li>React</li>
+      <li>MongoDB</li>
+      <li>MySQL</li>
+      <li>Firebase</li>
+      <li>GIT</li>
+      <li>Next.js</li>
+      <li>NestJS</li>
+      <li>GraphQL</li>
+      <li>JWT</li>
+      <li>Socket.IO</li>
+      <li>Webpack</li>
+      <li>ECS6</li>
+      <li>AWS</li>
     </ul>
-    <h2>
-      Competências linguísticas
-    </h2>
+    <h2>Competências linguísticas</h2>
     <table border="1" width="100%">
       <tr>
         <td>Idioma</td>
@@ -155,17 +142,9 @@
         <td>C1</td>
       </tr>
     </table>
-    <h2>
-      Objetivo
-    </h2>
-    <p>
-      Contribuir com minha experiência e qualificação.
-    </p>
-    <h2>
-      Pretensão salárial
-    </h2>
-    <p>
-      R$ 15.000
-    </p>
+    <h2>Objetivo</h2>
+    <p>Contribuir com minha experiência e qualificação.</p>
+    <h2>Pretensão salárial</h2>
+    <p>R$ 15.000</p>
   </body>
 </html>
