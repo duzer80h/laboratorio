@@ -5,7 +5,7 @@ window
     let html = "";
     produtos.forEach((produto) => {
       html += `
-              <div class="w-lg-25 card p-2">
+              <div class="card p-2">
             <div class="ratio-lg-1x1 text-center">
               <img
                 class="img-fluid"
@@ -17,9 +17,9 @@ window
             <p class="mt-1 mb-1">${produto.descricao}...</p>
             <div class="d-flex justify-content-between align-items-center">
               <span class="fs-2">
-                R$ <span class="text-success">${produto.preco.toFixed(2).replace('.',',')}</span>
+                R$ <span class="text-success">${produto.preco.toFixed(2).replace(".", ",")}</span>
               </span>
-              <a href="" class="btn btn-success">
+              <a class="btn btn-success" onclick="adicionarProdutoAoCarrinho(${produto.id},'${produto.nome}','${produto.imagem}',${produto.preco})">
                 <i class="fa-solid fa-plus"></i>
               </a>
             </div>
@@ -28,3 +28,9 @@ window
     });
     document.getElementById("lista-de-produtos").innerHTML = html;
   });
+function adicionarProdutoAoCarrinho(id, nome, imagem, preco) {
+  console.log(id);
+  console.log(nome);
+  console.log(imagem);
+  console.log(preco);
+}
