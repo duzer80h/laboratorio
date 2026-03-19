@@ -29,8 +29,32 @@ window
     document.getElementById("lista-de-produtos").innerHTML = html;
   });
 function adicionarProdutoAoCarrinho(id, nome, imagem, preco) {
-  console.log(id);
-  console.log(nome);
-  console.log(imagem);
-  console.log(preco);
+  // console.log(id);
+  // console.log(nome);
+  // console.log(imagem);
+  // console.log(preco);
+  // console.log(localStorage.getItem('carrinho'));
+  // console.log(JSON.parse(localStorage.getItem('carrinho')));
+  let carrinhoArray = JSON.parse(localStorage.getItem("carrinho")) || [];
+  let produtoExistente = carrinhoArray.find((produto) => produto.id === id);
+  console.log(produtoExistente);
+  if (produtoExistente) {
+    produtoExistente.quantidade += 1;
+  } else {
+    let novoProduto = {
+      id: id,
+      nome: nome,
+      imagem: imagem,
+      preco: preco,
+      quantidade: 1,
+    };
+    carrinhoArray.push(novoProduto);
+  }
+  // console.log(carrinhoArray);
+  // console.log(JSON.stringify(carrinhoArray));
+  localStorage.setItem("carrinho", JSON.stringify(carrinhoArray));
+  atualizarContadorDeProdutosAoCarrinho();
 }
+document.addEventListener('DOMContentLoaded', () =>{
+  atualizarContadorDeProdutosAoCarrinho();
+});

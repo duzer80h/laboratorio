@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/framework.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="shadow">
+      <div
+        class="container d-lg-flex align-items-center justify-content-between"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="text-success">Company Name</h1>
+          <i
+            class="fa-solid fa-bars d-lg-none cursor-pointer"
+            id="hamburguer"
+          ></i>
+        </div>
+        <ul class="d-lg-flex list-unstyled column-gap-3 menu d-none" id="menu">
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="./servicos.html">Serviços</a>
+          </li>
+          <li>
+            <a href="./produtos.html">Produtos <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="bg-white list-unstyled">
+              <li>
+                <a href=""> Categoria&nbsp;A </a>
+              </li>
+              <li>
+                <a href="">Categoria&nbsp;B</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./contato.html">Contato</a>
+          </li>
+          <li>
+            <a href="./carrrinho.html" class="position-relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                id="carrinho-quantidade"
+                class="bg-warning text-white rounded-1 px-1 position-absolute top-15"
+                >0</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">Carrinho</h2>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-start">Produto</th>
+              <th class="text-center">Quantidade</th>
+              <th class="text-center">Preço</th>
+              <th class="text-center">Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="corpo-carrinho">
+            <tr>
+              <td class="d-flex align-items-center column-gap-3">
+                <img
+                src="./img/Borrifador.webp"
+                alt="Borrifador"
+                style="max-width: 100px; max-height: 100px"
+                />
+                <div>Borrifador</div>
+              </td>
+              <td class="text-center">
+                <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn">1</button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td class="text-center">R$ 19,90</td>
+              <td class="text-center">R$ 19,90</td>
+              <td class="text-center">
+                <button class="btn btn-warning">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-100 text-md-center">
+      <div class="container d-lg-flex justify-content-between">
+        <div>
+          <h3>Menu</h3>
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Sobre </a>
+            </li>
+            <li>
+              <a href=""> Serviços </a>
+            </li>
+            <li>
+              <a href=""> Produtos </a>
+            </li>
+            <li>
+              <a href=""> Contato </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-md-5">
+          <h3>Produtos</h3>
+          <ul>
+            <li>
+              <a href="">Categoria A</a>
+            </li>
+            <li>
+              <a href="">Categoria B</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-md-5">
+          <h3>Serviços</h3>
+          <ul>
+            <li>
+              <a href="">Serviço A</a>
+            </li>
+            <li>
+              <a href=""> Serviço B </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-md-5">
+          <h3>Newsletter</h3>
+          <form action="">
+            <input
+              class="d-block w-100 border py-1 px-1 mb-1"
+              type="email"
+              placeholder="Email"
+            />
+            <button
+              class="d-block btn btn-success w-100 text-uppercase"
+              type="submit"
+            >
+              Inscrever
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5">
+        <hr />
+      </div>
+      <div class="container d-lg-flex justify-content-between">
+        <small> &copy; 2025 Empresa XPTO. Todos os direitos reservados. </small>
+        <ul class="d-lg-flex mt-md-5">
+          <li class="d-md-inline-block">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="px-2 d-inline-block">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="d-inline-block">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/carrinho.js"></script>
+  </body>
+</html>

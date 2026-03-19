@@ -114,6 +114,9 @@ body {
     text-align: center;
   }
 }
+.text-start {
+  text-align: left;
+}
 @media (min-width: 992px) {
   .text-lg-start {
     text-align: left;
@@ -266,6 +269,10 @@ body {
   background-color: var(--success);
   color: white;
 }
+.btn-warning {
+  background-color: var(--warning);
+  color: white;
+}
 .fw-light {
   font-weight: 300;
 }
@@ -310,4 +317,12 @@ body {
   .ratio-lg-1x1 {
     aspect-ratio: 1/1;
   }
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border: 1px solid silver;
+  padding: 15px;
 }
