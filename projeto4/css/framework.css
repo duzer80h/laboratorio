@@ -152,6 +152,7 @@ body {
 .position-relative {
   position: relative;
 }
+
 .top-15 {
   top: 15px;
 }
@@ -213,6 +214,11 @@ body {
 }
 .mb-5 {
   margin-bottom: 50px;
+}
+@media(min-width: 992px) {
+  .mb-lg-0 {
+    margin-bottom: 0;
+  }
 }
 .btn {
   padding: 10px 15px;

@@ -25,7 +25,16 @@
       <div class="container d-lg-flex align-items-center justify-content-between">
         <div class="d-flex justify-content-between align-items-center">
           <h1 class="text-success">Company Name</h1>
-          <i class="fa-solid fa-bars d-lg-none cursor-pointer" id="hamburguer"></i>
+          <div class="d-flex d-lg-none column-gap-4">
+            <a href="./carrinho.html" class="position-relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="carrinho-quantidade-mobile"
+              class="bg-warning text-white rounded-1 px-1 position-absolute"
+              >0</span
+              >
+            </a>
+            <i class="fa-solid fa-bars d-lg-none cursor-pointer" id="hamburguer"></i>
+          </div>
         </div>
         <ul class="d-lg-flex list-unstyled column-gap-3 menu d-none" id="menu">
           <li>
@@ -53,7 +62,7 @@
           <li>
             <a href="./contato.html">Contato</a>
           </li>
-          <li>
+          <li class="d-none d-lg-block">
             <a href="./carrinho.html" class="position-relative">
               <i class="fa-solid fa-cart-shopping"></i>
               <span id="carrinho-quantidade"
@@ -104,73 +113,8 @@
     </section>
     <section class="py-100 servicos">
       <h2 class="text-center h2 text-uppercase mb-5 text-dark">Serviços</h2>
-      <div class="container d-lg-flex column-gap-3">
-        <div>
-          <div
-            class="capa shadow"
-            style="
-              background-image: url('./img/servico-de-corte-e-manutencao.png');
-            "
-          ></div>
-          <h3 class="text-warning mt-3 fs-3 fw-normal">Corte e manutenção</h3>
-          <p class="mt-1 mb-1">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            id molestiae debitis consectetur natus minima vero blanditiis modi
-            non fugit sit enim ea aut, dolorum quae quidem aliquam voluptate.
-            Facilis!
-          </p>
-          <a
-            href=""
-            class="text-dark text-decoration-none d-flex align-items-center column-gap-1"
-          >
-            <span class="btn btn-success btn-sm">+</span>
-            <span>Saiba mais</span>
-          </a>
-        </div>
-        <div class="mt-md-5">
-          <div
-            class="capa shadow"
-            style="
-              background-image: url('./img/servico-de-adubacao-e-fertilizacao.webp');
-            "
-          ></div>
-          <h3 class="text-warning mt-3 fs-3 fw-normal">Corte e manutenção</h3>
-          <p class="mt-1 mb-1">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            id molestiae debitis consectetur natus minima vero blanditiis modi
-            non fugit sit enim ea aut, dolorum quae quidem aliquam voluptate.
-            Facilis!
-          </p>
-          <a
-            href=""
-            class="text-dark text-decoration-none d-flex align-items-center column-gap-1"
-          >
-            <span class="btn btn-success btn-sm">+</span>
-            <span>Saiba mais</span>
-          </a>
-        </div>
-        <div class="mt-md-5">
-          <div
-            class="capa shadow"
-            style="
-              background-image: url('./img/servico-controle-de-pragas.jpg');
-            "
-          ></div>
-          <h3 class="text-warning mt-3 fs-3 fw-normal">Corte e manutenção</h3>
-          <p class="mt-1 mb-1">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            id molestiae debitis consectetur natus minima vero blanditiis modi
-            non fugit sit enim ea aut, dolorum quae quidem aliquam voluptate.
-            Facilis!
-          </p>
-          <a
-            href=""
-            class="text-dark text-decoration-none d-flex align-items-center column-gap-1"
-          >
-            <span class="btn btn-success btn-sm">+</span>
-            <span>Saiba mais</span>
-          </a>
-        </div>
+      <div class="container d-lg-flex column-gap-3 justify-content-between" id="lista-de-servicos">
+       
       </div>
     </section>
     <section class="bg-success py-100 sobre text-white">
@@ -390,46 +334,8 @@
     </section>
     <section class="py-100 blog bg-light">
       <h2 class="text-center fs-4 text-uppercase fw-light mb-5">Blog</h2>
-      <div class="container d-lg-flex column-gap-3">
-        <div>
-          <div
-            style="background-image: url('./img/noticia1.webp')"
-            class="capa"
-          ></div>
-          <h3 class="fs-3 fw-normal mb-1 mt-3">Título 1</h3>
-          <p class="mb-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non
-            quibusdam cum ipsa quae quo. Et tempora ratione fugit totam quas
-            fuga velit cumque in qui, commodi nemo reiciendis quae?
-          </p>
-          <a href="" class="text-decoration-none text-warning">Leia mais</a>
-        </div>
-        <div class="mt-md-5">
-          <div
-            style="background-image: url('./img/noticia2.webp')"
-            class="capa"
-          ></div>
-          <h3 class="fs-3 fw-normal mb-1 mt-3">Título 1</h3>
-          <p class="mb-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non
-            quibusdam cum ipsa quae quo. Et tempora ratione fugit totam quas
-            fuga velit cumque in qui, commodi nemo reiciendis quae?
-          </p>
-          <a href="" class="text-decoration-none text-warning">Leia mais</a>
-        </div>
-        <div class="mt-md-5">
-          <div
-            style="background-image: url('./img/noticia3.webp')"
-            class="capa"
-          ></div>
-          <h3 class="fs-3 fw-normal mb-1 mt-3">Título 1</h3>
-          <p class="mb-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non
-            quibusdam cum ipsa quae quo. Et tempora ratione fugit totam quas
-            fuga velit cumque in qui, commodi nemo reiciendis quae?
-          </p>
-          <a href="" class="text-decoration-none text-warning">Leia mais</a>
-        </div>
+      <div class="container d-lg-flex column-gap-3" id="lista-de-posts">
+          
       </div>
     </section>
     <section class="text-center py-100 bg-warning text-white">
@@ -477,29 +383,33 @@
         <h2 class="text-center text-uppercase fs-4 fw-light mb-5">
           Fale conosco
         </h2>
-        <form action="">
+        <form id="formulario-fale-conosco">
           <input
             class="d-block w-100 border py-1 px-2 mb-1"
             type="text"
             placeholder="Nome"
+            id="nome"
             required
           />
           <input
             class="d-block w-100 border py-1 px-2 mb-1"
             type="email"
             placeholder="Email"
+            id="email"
             required
           />
           <input
             class="d-block w-100 border py-1 px-2 mb-1"
             type="number"
             placeholder="Telefone"
+            id="telefone"
             required
           />
           <textarea
             class="d-block w-100 border py-1 px-2 mb-1"
             rows="4"
             placeholder="Mensagem"
+            id="mensagem"
             required
           ></textarea>
           <button

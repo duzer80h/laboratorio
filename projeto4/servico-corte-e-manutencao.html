@@ -22,18 +22,24 @@
   </head>
   <body>
     <header class="shadow">
-      <div class="container d-lg-flex align-items-center justify-content-between">
+      <div
+        class="container d-lg-flex align-items-center justify-content-between"
+      >
         <div class="d-flex justify-content-between align-items-center">
           <h1 class="text-success">Company Name</h1>
           <div class="d-flex d-lg-none column-gap-4">
             <a href="./carrinho.html" class="position-relative">
               <i class="fa-solid fa-cart-shopping"></i>
-              <span id="carrinho-quantidade-mobile"
-              class="bg-warning text-white rounded-1 px-1 position-absolute"
-              >0</span
+              <span
+                id="carrinho-quantidade-mobile"
+                class="bg-warning text-white rounded-1 px-1 position-absolute"
+                >0</span
               >
             </a>
-            <i class="fa-solid fa-bars d-lg-none cursor-pointer" id="hamburguer"></i>
+            <i
+              class="fa-solid fa-bars d-lg-none cursor-pointer"
+              id="hamburguer"
+            ></i>
           </div>
         </div>
         <ul class="d-lg-flex list-unstyled column-gap-3 menu d-none" id="menu">
@@ -47,12 +53,12 @@
             <a href="./servicos.html">Serviços</a>
           </li>
           <li>
-            <a href="./produtos.html">Produtos <i class="fa-solid fa-angle-down"></i></a>
+            <a href="./produtos.html"
+              >Produtos <i class="fa-solid fa-angle-down"></i
+            ></a>
             <ul class="bg-white list-unstyled">
               <li>
-                <a href="">
-                  Categoria&nbsp;A
-                </a>
+                <a href=""> Categoria&nbsp;A </a>
               </li>
               <li>
                 <a href="">Categoria&nbsp;B</a>
@@ -65,7 +71,8 @@
           <li class="d-none d-lg-block">
             <a href="./carrinho.html" class="position-relative">
               <i class="fa-solid fa-cart-shopping"></i>
-              <span id="carrinho-quantidade"
+              <span
+                id="carrinho-quantidade"
                 class="bg-warning text-white rounded-1 px-1 position-absolute top-15"
                 >0</span
               >
@@ -76,32 +83,59 @@
     </header>
     <section>
       <div class="container">
-        <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">Carrinho</h2>
+        <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">
+          Corte e manutenção
+        </h2>
       </div>
     </section>
     <section class="mb-5">
-      <div class="container">
-        <div class="d-none d-lg-block">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-start">Produto</th>
-                <th class="text-center">Quantidade</th>
-                <th class="text-center">Preço</th>
-                <th class="text-center">Total</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="corpo-carrinho">
-              
-            </tbody>
-          </table>
+      <div class="container d-lg-flex column-gap-3">
+        <div class="w-lg-50 mb-3 mb-lg-0">
+          <img class="img-fluid"
+            src="./img/servico-de-corte-e-manutencao.png"
+            alt="Corte e manutenção"
+          />
         </div>
-        <div class="d-lg-none mb-3" id="corpo-carrinho-mobile">
-
-        </div>
-        <div id="carrinho-div-checkout" style="display: none;">
-          <a href="./checkout.html" class="btn btn-success d-inline-block mt-3">Ir para o checkout</a>
+        <div class="w-lg-50">
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            numquam totam eius rem vel alias, ullam deserunt laudantium, enim
+            corporis, exercitationem sapiente architecto! Mollitia facilis
+            praesentium cum doloremque amet laboriosam!
+          </p>
+          <div class="d-flex column-gap-3 align-items-center mb-3">
+            <i class="fa-regular fa-clock text-warning fs-3"></i>
+            <div>
+              <div>
+                Tempo de execução
+              </div>
+              <div class="fw-bold mt-1">
+                4 horas
+              </div>
+            </div>
+          </div>
+          <div class="d-flex column-gap-3 align-items-center mb-3">
+            <i class="fa-regular fa-calendar text-warning fs-3"></i>
+            <div>
+              <div>
+                Validade
+              </div>
+              <div class="fw-bold mt-1">
+                60 dias
+              </div>
+            </div>
+          </div>
+          <div class="d-flex column-gap-3 align-items-center">
+            <i class="fa-regular fa-money-bill-1 text-warning fs-3"></i>
+            <div>
+              <div>
+                Preço
+              </div>
+              <div class="fw-bold mt-1">
+                R$ 250,00
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -187,6 +221,5 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="./js/carrinho.js"></script>
   </body>
 </html>

@@ -9,7 +9,6 @@ function contadorDeProdutosNoLocalStorage() {
 }
 function atualizarContadorDeProdutosAoCarrinho() {
   console.log("Executando a função atualizarContadorDeProdutosAoCarrinho...");
-  let carrinhoQuantidade = document.getElementById("carrinho-quantidade");
-  console.log(carrinhoQuantidade);
-  carrinhoQuantidade.textContent = contadorDeProdutosNoLocalStorage();
+  document.getElementById("carrinho-quantidade").textContent = contadorDeProdutosNoLocalStorage();
+  document.getElementById("carrinho-quantidade-mobile").textContent = contadorDeProdutosNoLocalStorage();
 }

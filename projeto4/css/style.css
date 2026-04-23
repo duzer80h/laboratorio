@@ -58,6 +58,9 @@ header .menu > li > ul a:hover {
   background-color: var(--warning);
   color: white;
 }
+header #carrinho-quantidade-mobile {
+  top: -15px;
+}
 .hero {
   background-image: url("./../img/bg1.jpg");
   background-repeat: no-repeat;
@@ -100,6 +103,11 @@ header .menu > li > ul a:hover {
   background-color: var(--warning);
   border-radius: 50%;
 }
+@media (min-width: 992px) {
+  .servicos .container > div {
+    width: 33.33%;
+  }
+}
 .sobre p {
   line-height: 25px;
 }
@@ -127,6 +135,11 @@ header .menu > li > ul a:hover {
   aspect-ratio: 3/2;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .depoimentos iframe {
+    margin-bottom: 30px;
+  }
+}
 @media (min-width: 992px) {
   .depoimentos iframe {
     width: 33.33%;
@@ -139,8 +152,19 @@ header .menu > li > ul a:hover {
   background-position: center center;
   background-size: cover;
 }
+@media(max-width: 991px){
+  .galeria .d-flex > div {
+    width: 50%;
+  }
+}
+
 .blog p {
   line-height: 22.5px;
+}
+@media(max-width: 991px){
+  .blog .container > div {
+    margin-bottom: 30px;
+  }
 }
 .mapa {
   width: 100%;
