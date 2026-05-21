@@ -1,0 +1,53 @@
+<section>
+  <div class="container">
+    <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">Checkout</h2>
+  </div>
+</section>
+<section class="mb-5">
+  <div class="container">
+    <div class="d-none d-lg-block">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="text-start">Produto</th>
+            <th class="text-center">Quantidade</th>
+            <th class="text-center">Preço</th>
+            <th class="text-center">Total</th>
+          </tr>
+        </thead>
+        <tbody id="corpo-carrinho"></tbody>
+      </table>
+    </div>
+    <div class="d-lg-none mb-3" id="corpo-carrinho-mobile"></div>
+    <div class="mt-3">
+      <form id="formulario-pedido">
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Nome"
+          class="form-control mb-1 d-block w-100"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="form-control mb-1 d-block w-100"
+          required
+        />
+        <input
+          type="text"
+          nome="whatsapp"
+          id="whatsapp"
+          placeholder="WhatsApp"
+          class="form-control mb-1 d-block w-100"
+          required
+        />
+        <button type="submit" class="btn btn-success">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="/assets/js/checkout.js"></script>
