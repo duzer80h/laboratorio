@@ -1,0 +1,24 @@
+[
+
+    {
+        "id": 1,
+        "nome": "Corte e manutenção",
+        "descricao": "Corta grama e faz manutenção",
+        "url": "servicos/corte-e-manutencao",
+        "imagem": "servico-de-corte-e-manutencao.png"
+    },
+    {
+        "id": 2,
+        "nome": "Controle de pragas",
+        "descricao": "Fazemos controle de pragas",
+        "url": "servicos/controle-de-pragas",
+        "imagem": "servico-controle-de-pragas.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "Adubação e fertilização",
+        "descricao": "Temos seviços de adubação e fertilização",
+        "url": "servicos/adubacao-e-fertilizacao",
+        "imagem": "servico-de-adubacao-e-fertilizacao.webp"
+    }
+]

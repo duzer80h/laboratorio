@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "titulo": "Título 1",
+        "resumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non",
+        "imagem": "noticia1.webp",
+        "url": "blog/titulo-1"
+    },
+    {
+        "id": 2,
+        "titulo": "Título 2",
+        "resumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non",
+        "imagem": "noticia2.webp",
+        "url": "blog/titulo-2"
+    },
+    {
+        "id": 3,
+        "titulo": "Título 3",
+        "resumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non",
+        "imagem": "noticia3.webp",
+        "url": "blog/titulo-3"
+    }
+]
