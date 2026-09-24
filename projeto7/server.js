@@ -1,0 +1,54 @@
+const express = require("express");
+const path = require("path");
+const app = express();
+const ROOT = __dirname;
+
+app.set("view engine", "ejs");
+app.set("views", ROOT);
+
+app.use("/assets", express.static(path.join(ROOT, "assets")));
+
+app.get("/", (req, res) => {
+  res.render("pages/index");
+});
+app.get("/carrinho", (req, res) => {
+  res.render("pages/carrinho");
+});
+app.get("/checkout", (req, res) => {
+  res.render("pages/checkout");
+});
+app.get("/sobre", (req, res) => {
+  res.render("pages/sobre");
+});
+app.get("/contato", (req, res) => {
+  res.render("pages/contato");
+});
+app.get("/servicos", (req, res) => {
+  res.render("pages/servicos");
+});
+app.get("/blog", (req, res) => {
+  res.render("pages/blog");
+});
+app.get("/servicos/adubacao-e-fertilizacao", (req, res) => {
+  res.render("pages/servico-adubacao-e-fertilizacao");
+});
+app.get("/servicos/controle-de-pragas", (req, res) => {
+  res.render("pages/servico-controle-de-pragas");
+});
+app.get("/servicos/corte-e-manutencao", (req, res) => {
+  res.render("pages/servico-corte-e-manutencao");
+});
+app.get("/blog/titulo-1", (req, res) => {
+  res.render("pages/blog-titulo-1");
+});
+app.get("/blog/titulo-2", (req, res) => {
+  res.render("pages/blog-titulo-2");
+});
+app.get("/blog/titulo-3", (req, res) => {
+    res.render("pages/blog-titulo-3");
+});
+const port = 3000;
+
+app.listen(port, () => {
+  console.log(`servidor rodando em http://localhost:${port}`);
+});
