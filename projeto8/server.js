@@ -1,10 +1,12 @@
 const express = require("express");
 const path = require("path");
+const sequelize = require("./config/database");
+const Servico = require("./models/Servico");
 const app = express();
 const ROOT = __dirname;
 
 app.set("view engine", "ejs");
-app.set("views", ROOT);
+app.set("views", path.join(ROOT, "views"));
 
 app.use("/assets", express.static(path.join(ROOT, "assets")));
 
@@ -49,6 +51,20 @@ app.get("/blog/titulo-3", (req, res) => {
 });
 const port = 3000;
 
-app.listen(port, () => {
-  console.log(`servidor rodando em http://localhost:${port}`);
-});
+async function iniciarServidor() {
+  try {
+    await sequelize.authenticate();
+    console.log("Banco de dados conectado.");
+
+    await sequelize.sync();
+    console.log("Tabelas sincronizadas.");
+
+    app.listen(port, () => {
+      console.log(`Servidor rodando em http://localhost:${port}`);
+    });
+  } catch (erro) {
+    console.error("Erro ao iniciar o servidor:", erro);
+  }
+}
+
+iniciarServidor();
