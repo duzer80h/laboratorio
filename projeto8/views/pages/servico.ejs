@@ -2,7 +2,7 @@
 <section>
   <div class="container">
     <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">
-      Controle de pragas
+      <%= servico.nome %>
     </h2>
   </div>
 </section>
@@ -10,16 +10,13 @@
   <div class="container d-lg-flex column-gap-3">
     <div class="w-lg-50 mb-3 mb-lg-0">
       <img class="img-fluid"
-        src="/assets/img/servico-controle-de-pragas.jpg"
-        alt="Controle de pragas"
+        src="/assets/img/<%= servico.imagem %>"
+        alt="<%= servico.nome %>"
       />
     </div>
     <div class="w-lg-50">
       <p class="mb-3">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-        numquam totam eius rem vel alias, ullam deserunt laudantium, enim
-        corporis, exercitationem sapiente architecto! Mollitia facilis
-        praesentium cum doloremque amet laboriosam!
+        <%= servico.descricao %>
       </p>
       <div class="d-flex column-gap-3 align-items-center mb-3">
         <i class="fa-regular fa-clock text-warning fs-3"></i>
@@ -28,7 +25,7 @@
             Tempo de execução
           </div>
           <div class="fw-bold mt-1">
-            4 horas
+            <%= servico.tempoExecucao.slice(0,5) %> horas
           </div>
         </div>
       </div>
@@ -39,7 +36,7 @@
             Validade
           </div>
           <div class="fw-bold mt-1">
-            60 dias
+            <%= servico.validade %>
           </div>
         </div>
       </div>
@@ -50,7 +47,7 @@
             Preço
           </div>
           <div class="fw-bold mt-1">
-            R$ 250,00
+            R$ <%= servico.preco.replace('.', ',') %>
           </div>
         </div>
       </div>

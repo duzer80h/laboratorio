@@ -25,20 +25,23 @@ app.get("/sobre", (req, res) => {
 app.get("/contato", (req, res) => {
   res.render("pages/contato");
 });
-app.get("/servicos", (req, res) => {
-  res.render("pages/servicos");
+app.get("/servicos", async (req, res) => {
+  const servicos = await Servico.findAll({
+    raw: true,
+    order: [["nome", "asc"]],
+  });
+  res.render("pages/servicos", { servicos });
+});
+app.get("/servicos/:slug", async (req, res) => {
+  const { slug } = req.params;
+  const servico = await Servico.findOne({
+    where: { slug },
+    raw: true,
+  });
+  res.render("pages/servico", { servico });
 });
 app.get("/blog", (req, res) => {
   res.render("pages/blog");
-});
-app.get("/servicos/adubacao-e-fertilizacao", (req, res) => {
-  res.render("pages/servico-adubacao-e-fertilizacao");
-});
-app.get("/servicos/controle-de-pragas", (req, res) => {
-  res.render("pages/servico-controle-de-pragas");
-});
-app.get("/servicos/corte-e-manutencao", (req, res) => {
-  res.render("pages/servico-corte-e-manutencao");
 });
 app.get("/blog/titulo-1", (req, res) => {
   res.render("pages/blog-titulo-1");
@@ -47,7 +50,7 @@ app.get("/blog/titulo-2", (req, res) => {
   res.render("pages/blog-titulo-2");
 });
 app.get("/blog/titulo-3", (req, res) => {
-    res.render("pages/blog-titulo-3");
+  res.render("pages/blog-titulo-3");
 });
 const port = 3000;
 
