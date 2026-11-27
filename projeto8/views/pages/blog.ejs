@@ -1,9 +1,23 @@
 <%- include("../partials/header") %>
-  <section class="py-100 blog bg-light">
-    <h2 class="text-center fs-4 text-uppercase fw-light mb-5">Blog</h2>
-    <div class="container d-lg-flex column-gap-3" id="lista-de-posts">
-        
+<section class="py-100 blog bg-light">
+  <h2 class="text-center fs-4 text-uppercase fw-light mb-5">Blog</h2>
+  <div class="container d-lg-flex column-gap-3">
+    <% artigos.forEach(artigo => {%>
+    <div>
+      <div
+        style="background-image: url(&quot;/assets/img/<%= artigo.imagem %>&quot;)"
+        class="capa"
+      ></div>
+      <h3 class="fs-3 fw-normal mb-1 mt-3"><%= artigo.titulo %></h3>
+      <p class="mb-1">
+        <%= artigo.resumo %>
+      </p>
+      <a href="blog/<%= artigo.slug %>" class="text-decoration-none text-warning"
+        >Leia mais</a
+      >
     </div>
-  </section>
-  <script src="/assets/js/blog.js"></script>
-  <%- include("../partials/footer") %>
+    <% }) %>
+  </div>
+</section>
+<script src="/assets/js/blog.js"></script>
+<%- include("../partials/footer") %>

@@ -260,10 +260,10 @@ footer hr {
   }
 }
 @media (min-width: 992px) {
-  #lista-de-produtos {
+  .lista-de-produtos {
     flex-wrap: wrap;
   }
-  #lista-de-produtos > div {
+  .lista-de-produtos > div {
     flex: 0 0 25%;
     box-sizing: border-box;
   }

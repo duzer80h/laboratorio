@@ -2,7 +2,7 @@
 <section>
   <div class="container">
     <h2 class="h2 text-uppercase mb-5 mt-5 text-dark">
-      Título 1
+      <%= artigo.titulo %>
     </h2>
   </div>
 </section>
@@ -10,16 +10,13 @@
   <div class="container d-lg-flex column-gap-3">
     <div class="w-lg-50 mb-3 mb-lg-0">
       <img class="img-fluid"
-        src="/assets/img/noticia1.webp"
-        alt="Titulo 1"
+        src="/assets/img/<%= artigo.imagem %>"
+        alt="<%= artigo.titulo %>"
       />
     </div>
     <div class="w-lg-50">
-      <p class="mb-3">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-        numquam totam eius rem vel alias, ullam deserunt laudantium, enim
-        corporis, exercitationem sapiente architecto! Mollitia facilis
-        praesentium cum doloremque amet laboriosam!
+      <p class="mb-3" style="white-space: pre-line;">
+        <%= artigo.conteudo %>
       </p>
       <div class="d-flex column-gap-3 align-items-center mb-3">
         <i class="fa-regular fa-calendar text-warning fs-3"></i>
@@ -28,7 +25,7 @@
             Data
           </div>
           <div class="fw-bold mt-1">
-            23/04/2026 18:16
+            <%= new Date(artigo.createdAt).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }) %>
           </div>
         </div>
       </div>
